@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AddressBookFrontendApp'`, () => {
+  it(`should have as title 'AddressBookApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AddressBookFrontendApp');
+    expect(app.title).toEqual('AddressBookApp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AddressBookFrontendApp app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('AddressBookApp app is running!');
   });
 });
